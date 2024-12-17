@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Byron Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Byron</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#About me">About Me</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#family">Family</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <a href="#gallery-sect">Gallery</a>
+                </div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="contactme.html">Contact me</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#About me">About Me</a>
+                <a href="#family">Family</a> 
+                <a href="#gallery-sect">Gallery</a>
+                <a href="contactme.html">Contacts</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>    
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="images/me.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Byron</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am an enthusiastic IT student in Camarines Norte State College passionate about exploring the dynamic world of technology. With a strong drive to learn and grow, I am eager to deepen my knowledge in areas like software development, cybersecurity, and emerging technologies. My goal is to develop innovative solutions that make a meaningful impact while continuously improving my skills to stay ahead in the ever-evolving IT landscape.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/ByronnnB"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/byron.boral"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/byron-boral-850796341/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/imbyronnnb/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="About me">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1000">
+            <h2 data-aos="zoom-in" data-aos-duration="1000">About Me</h2>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                Hi, I’m Byron Boral, a 19-year-old Information Technology student at Camarines Norte State College. As the eldest in my family and the breadwinner, I’ve embraced the responsibility of providing for my loved ones while striving to achieve my own dreams. I value discipline, practicality, and perseverance, which guide me in balancing my studies, work, and personal growth. My journey is fueled by determination and the drive to build a better future for myself and my family.
+            </p>
+        </div>
+    </section>
+        
+    <section id="family">
+        <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">My <span>Family</span></h1>
+        <div class="family-container">
+                
+               <div class="family-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                   <div class="text-content">
+                       <h2>Mother</h2>
+                       <p>Raquel T. Boral</p>
+                   </div>
+                   <img src="images/mother.jpg" alt="Mother">
+               </div>
+               
+               <div class="family-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                   <div class="text-content">
+                       <h2>Father</h2>
+                       <p>Bobby S. Boral</p>
+                   </div>
+                   <img src="images/father.jpg" alt="Father">
+               </div>
+               
+               <div class="family-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                   <div class="text-content">
+                       <h2>Sister</h2>
+                       <p>Alliyah Marie T. Boral</p>
+                   </div>
+                   <img src="images/sister.jpg" alt="Sister">
+               </div>
+           </div>
+       </section>
+
+       
+       <section class="gallery" id="gallery-sect">
+        <h1 class="gallery-title" data-aos="fade-down" data-aos-duration="1000">Boral <span>Fam</span></h1>
+        <div class="gallery-box">
+            <div class="gallery-container">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800"><img src="images/fam1.jpg" alt="Image 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100"><img src="images/fam2.jpg" alt="Image 2"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"><img src="images/fam3.jpg" alt="Image 3"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"><img src="images/fam4.jpg" alt="Image 4"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"><img src="images/fam5.jpg" alt="Image 5"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500"><img src="images/fam6.jpg" alt="Image 6"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"><img src="images/fam1.jpg" alt="Image 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700"><img src="images/fam2.jpg" alt="Image 2"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800"><img src="images/fam3.jpg" alt="Image 3"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="900"><img src="images/fam4.jpg" alt="Image 4"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1000"><img src="images/fam5.jpg" alt="Image 5"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1100"><img src="images/fam6.jpg" alt="Image 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="randump">
+        <h1 class="gallery-title2" data-aos="fade-down" data-aos-duration="1000">Randump</h1>
+        <div class="gallery-random">
+            <div class="gallery-random">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800"><img src="images/rand1.jpg" alt="Random Image 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100"><img src="images/rand2.jpg" alt="Random Image 2"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"><img src="images/rand3.jpg" alt="Random Image 3"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"><img src="images/rand4.jpg" alt="Random Image 4"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"><img src="images/rand5.jpg" alt="Random Image 5"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500"><img src="images/rand6.jpg" alt="Random Image 6"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"><img src="images/rand7.jpg" alt="Random Image 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700"><img src="images/rand8.jpg" alt="Random Image 2"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800"><img src="images/rand9.jpg" alt="Random Image 3"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="900"><img src="images/rand10.jpg" alt="Random Image 4"></div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+</body>
+<footer>
+    © 2024 John Byron T. Boral. All rights reserved.
+</footer>
+</html>

@@ -1,0 +1,236 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #303031, #090909);
+    color: #ffffff;
+}
+
+/* Navigation Container */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+
+.logo {
+    color: #fffdfd;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+
+.nav-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-container a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-container a:hover {
+    color: #007bff;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+}
+
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-box i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-box a:hover {
+    color: #007bff;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 884px) {
+    .nav-container {
+        display: none; /* Hide navigation links on small screens */
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+    }
+}
+* Navigation Container */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Navigation Wrapper */
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    color: #fffdfd;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.logo span {
+    color: #ffffff;
+}
+
+
+.hamburg, .cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #333333;
+    font-size: 2rem;
+    display: none;
+}
+
+
+.nav-container .links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-container .links a:hover {
+    color: #007bff; 
+}
+
+
+.nav-container .contact-btn {
+    background-color: #007bff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.nav-container .contact-btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav-container .contact-btn:hover {
+    background-color: #0056b3; 
+}
+
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%); 
+    width: 40%;
+    height: auto;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+.dropdown .links a {
+    color: #333333;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.dropdown .links a:hover {
+    background-color: #f1f1f1; 
+}
+
+
+@media (max-width:  768px) {
+    .nav-container .links {
+        display: none; /* Hide links on small screens */
+    }
+
+    .hamburg, .cancel {
+        display: block; /* Show hamburger and cancel buttons */
+    }
+
+    .cancel {
+        color: #333333;
+    }
+
+    /* Show the dropdown menu when activated */
+    .dropdown.show {
+        transform: translateY(0);
+    }
+}
